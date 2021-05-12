@@ -1,0 +1,13 @@
+.main {
+  padding: $padding-xs;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $color-text-dark;
+  color: $color-text-light;
+}
+
+.list {
+  display: flex;
+  list-style-type: none;
+}

@@ -3,5 +3,5 @@ export default function ServerErrorPage() {
     <div>
       <h1>500 - Server error page</h1>
     </div>
-  )
+  );
 }

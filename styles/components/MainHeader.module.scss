@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   color: $color-text-dark;
-  padding: $padding-0 $padding-xs;
+  padding: $padding-0 $padding-m;
   border-bottom: $border-thin solid lighten($color-light-2, .9);
   box-shadow: $shadow-long;
 }
@@ -17,8 +17,26 @@
 .listItem {
   color: $color-text-navigation-link;
   margin-left: $margin-m;
+  cursor: pointer;
 }
 
 .active {
   color: $color-text-navigation-link-active;
+}
+
+.modalContainer {
+  background: $color-light-1;
+  position: fixed;
+  right: 15px;
+  top: 40px;
+  min-width: 60px;
+  min-height: 60px;
+  padding: $padding-xs;
+  border-radius: $border-radius-s;
+  border: $border-thin solid lighten($color-light-2, .9);
+  box-shadow: $shadow-long;
+}
+
+.modalContent {
+  margin: $margin-xs;
 }

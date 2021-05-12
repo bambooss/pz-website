@@ -1,9 +1,16 @@
+import Head from 'next/head'
+
 import '../styles/globals.css'
-import Layout from '../components/layout/layout'
+import Layout from '../components/layout/Layout'
 
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
+      <Head>
+        <title>Project Zone</title>
+        <meta name="description" content="Connecting projects with developers" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+      </Head>
       <Component {...pageProps} />
     </Layout>
   )

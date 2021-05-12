@@ -1,7 +1,6 @@
 /*
   BREAKPOINTS
 */
-
 $breakpoint-x-large: 1700px;
 $breakpoint-large: 1350px;
 $breakpoint-medium: 1100px;
@@ -24,7 +23,10 @@ $color-text-dark: #1e1e1e;
 $color-text: #2d3032;
 $color-text-light: #ffffff;
 
+$color-text-navigation-title: $color-light-4;
+
 $color-text-navigation-link: $color-light-4;
+$color-text-navigation-link-hover: $color-dark-4;
 $color-text-navigation-link-active: $color-dark-4;
 
 /*

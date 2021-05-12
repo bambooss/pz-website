@@ -47,6 +47,12 @@ function MainHeader() {
           >
             <Link href="/contact">Contact</Link>
           </li>
+          <li className={classes.listItem}>
+            <Link href="http://localhost:3000/signin">Login</Link>
+          </li>
+          <li className={classes.listItem}>
+            <Link href="http://localhost:3000/signup">Register</Link>
+          </li>
         </ul>
       </nav>
     </header>

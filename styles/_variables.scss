@@ -16,10 +16,16 @@ $color-dark-3: #2d3032;
 $color-dark-4: #484d53;
 
 $color-light-1: #ffffff;
+$color-light-2: #dddddd;
+$color-light-3: #aaaaaa;
+$color-light-4: #888888;
 
 $color-text-dark: #1e1e1e;
 $color-text: #2d3032;
 $color-text-light: #ffffff;
+
+$color-text-navigation-link: $color-light-4;
+$color-text-navigation-link-active: $color-dark-4;
 
 /*
   GRADIENTS
@@ -28,6 +34,7 @@ $color-text-light: #ffffff;
 /*
   SHADOWS
 */
+$shadow-long: 0 2px 40px -7px $color-light-2;
 
 /*
   BORDER

@@ -1,8 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import classes from '../../styles/components/MainHeader.module.scss';
+import { useRouter } from 'next/router';
 
 function MainHeader() {
+  const router = useRouter();
   return (
     <header className={classes.main}>
       <Link href="/">
@@ -17,16 +19,32 @@ function MainHeader() {
       </Link>
       <nav>
         <ul className={classes.list}>
-          <li>
+          <li
+            className={`${router.pathname === '/' ? classes.active : ''} ${
+              classes.listItem
+            }`}
+          >
             <Link href="/">Home</Link>
           </li>
-          <li>
+          <li
+            className={`${router.pathname === '/about' ? classes.active : ''} ${
+              classes.listItem
+            }`}
+          >
             <Link href="/about">About</Link>
           </li>
-          <li>
+          <li
+            className={`${router.pathname === '/docs' ? classes.active : ''} ${
+              classes.listItem
+            }`}
+          >
             <Link href="/docs">Docs</Link>
           </li>
-          <li>
+          <li
+            className={`${
+              router.pathname === '/contact' ? classes.active : ''
+            } ${classes.listItem}`}
+          >
             <Link href="/contact">Contact</Link>
           </li>
         </ul>

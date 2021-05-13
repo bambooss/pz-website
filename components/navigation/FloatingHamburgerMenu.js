@@ -1,4 +1,4 @@
-import { Fragment, useState } from 'react';
+import { Fragment } from 'react';
 
 import classes from '../../styles/components/FloatingHamburgerMenu.module.scss';
 import MenuModal from '../modals/MenuModal';

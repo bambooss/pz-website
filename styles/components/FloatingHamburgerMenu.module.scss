@@ -1,35 +1,42 @@
 .hamburgerWrapper {
+  z-index: 9999;
   text-align: center;
   position: fixed;
   right: 30px;
   top: 30px;
-  width: 70px;
-  height: 70px;
-  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  border-radius: $border-radius-full;
   background-color: $color-light-2;
   box-shadow: 4px 4px 10px 1px rgba($color-light-2, .7);
   cursor: pointer;
+  transition: all .2s;
+
+  &:hover {
+    transform: scale(.95);
+    box-shadow: 2px 2px 5px 1px rgba($color-light-2, .8);
+  }
 
   &:hover .hamburgerIcon::before {
     top: -8px;
-    transform: scaleX(.9);
+    transform: scaleX(.95);
   }
 
   &:hover .hamburgerIcon::after {
     top: 8px;
-    transform: scaleX(.9);
+    transform: scaleX(.95);
   }
 }
 
 .hamburgerIcon {
   position: relative;
-  margin-top: 35px;
+  margin-top: $margin-l;
 
   &,
   &::before,
   &::after {
     background-color: $color-light-1;
-    width: 2rem;
+    width: 30px;
     height: 2px;
     display: inline-block;
   }
@@ -39,13 +46,14 @@
     content: "";
     position: absolute;
     left: 0;
+    transition: all .2s;
   }
 
   &::before {
-    top: -10px;
+    top: -9px;
   }
 
   &::after {
-    top: 10px;
+    top: 9px;
   }
 }

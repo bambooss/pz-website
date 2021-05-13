@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import classes from '../../styles/components/MainHeader.module.scss';
 import { useRouter } from 'next/router';
-import LogoIcon from '../navigation/LogoIcon';
+import LogoIcon from './LogoIcon';
 
 import { FaUserCircle } from 'react-icons/fa';
 

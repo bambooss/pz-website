@@ -1,0 +1,51 @@
+.hamburgerWrapper {
+  text-align: center;
+  position: fixed;
+  right: 30px;
+  top: 30px;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  background-color: $color-light-2;
+  box-shadow: 4px 4px 10px 1px rgba($color-light-2, .7);
+  cursor: pointer;
+
+  &:hover .hamburgerIcon::before {
+    top: -8px;
+    transform: scaleX(.9);
+  }
+
+  &:hover .hamburgerIcon::after {
+    top: 8px;
+    transform: scaleX(.9);
+  }
+}
+
+.hamburgerIcon {
+  position: relative;
+  margin-top: 35px;
+
+  &,
+  &::before,
+  &::after {
+    background-color: $color-light-1;
+    width: 2rem;
+    height: 2px;
+    display: inline-block;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+
+  &::before {
+    top: -10px;
+  }
+
+  &::after {
+    top: 10px;
+  }
+}

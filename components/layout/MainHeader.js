@@ -54,6 +54,7 @@ function MainHeader() {
           {menuItems.map(item => {
             return (
               <li
+                key={item.name}
                 className={`${
                   router.pathname === item.url ? classes.active : ''
                 } ${classes.listItem}`}

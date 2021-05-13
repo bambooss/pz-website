@@ -30,6 +30,10 @@
       margin-left: $margin-s;
       margin-bottom: 20vh;
       cursor: pointer;
+
+      &:hover {
+        color: $color-text-navigation-link-hover;
+      }
     }
     .logo {
       padding-right: $padding-m;

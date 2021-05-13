@@ -3,7 +3,7 @@ import LogoIcon from '../navigation/LogoIcon';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-const MenuModal = () => {
+const MenuModal = props => {
   const router = useRouter();
   const menuItems = [
     {
@@ -27,7 +27,7 @@ const MenuModal = () => {
   return (
     <div className={classes.menuModal}>
       <div className={classes.menuModalContainer}>
-        <div className={classes.logoWrapper}>
+        <div className={classes.logoWrapper} onClick={props.toggleModal}>
           <LogoIcon
             className={classes.logo}
             linkPath={'/'}
@@ -36,7 +36,9 @@ const MenuModal = () => {
             width={35}
             height={35}
           />
-          <h1>Project Zone</h1>
+          <Link href={'/'}>
+            <h1>Project Zone</h1>
+          </Link>
         </div>
         <nav>
           <ul className={classes.list}>
@@ -44,6 +46,7 @@ const MenuModal = () => {
               return (
                 <li
                   key={item.name}
+                  onClick={props.toggleModal}
                   className={`${
                     router.pathname === item.url ? classes.active : ''
                   } ${classes.listItem}`}

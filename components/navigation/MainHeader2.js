@@ -1,8 +1,15 @@
 import LogoIcon from './LogoIcon';
 import FloatingHamburgerMenu from './FloatingHamburgerMenu';
 import classes from '../../styles/components/MainHeader2.module.scss';
+import { useState } from 'react';
 
 const MainHeader2 = () => {
+  const [isOpened, setIsOpened] = useState(false);
+
+  const toggleModal = () => {
+    setIsOpened(!isOpened);
+  };
+
   return (
     <header>
       <div className={classes.logo}>
@@ -14,7 +21,7 @@ const MainHeader2 = () => {
           height={35}
         />
       </div>
-      <FloatingHamburgerMenu />
+      <FloatingHamburgerMenu toggleModal={toggleModal} isOpened={isOpened} />
     </header>
   );
 };

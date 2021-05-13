@@ -7,7 +7,6 @@
   width: 60px;
   height: 60px;
   border-radius: $border-radius-full;
-  background-color: $color-light-2;
   box-shadow: 4px 4px 10px 1px rgba($color-light-2, .7);
   cursor: pointer;
   transition: all .2s;
@@ -25,6 +24,17 @@
   &:hover .hamburgerIcon::after {
     top: 8px;
     transform: scaleX(.95);
+  }
+
+  &:hover .closeIcon::before {
+    top: 0;
+    transform: rotate(45deg) scaleX(.95);
+
+  }
+
+  &:hover .closeIcon::after {
+    top: 0;
+    transform: rotate(-45deg) scaleX(.95);
   }
 }
 
@@ -56,4 +66,44 @@
   &::after {
     top: 9px;
   }
+}
+
+.closeIcon {
+  position: relative;
+  margin-top: $margin-l;
+
+  & {
+    display: inline-block;
+    width: 30px;
+  }
+
+  &::before,
+  &::after {
+    background-color: $color-light-1;
+    width: 30px;
+    height: 2px;
+    display: inline-block;
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .2s;
+  }
+
+  &::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+}
+
+.openWrapper {
+  background-color: $color-light-2;
+}
+
+.closeWrapper {
+  background-color: #f87979;
 }

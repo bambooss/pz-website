@@ -1,6 +1,8 @@
 import Head from 'next/head';
 // import Image from 'next/image'
 // import styles from '../styles/Home.module.scss'
+import HomePaginationSlider from '../components/navigation/HomePaginationSlider';
+import { useState } from 'react';
 
 export default function Home() {
   return (
@@ -12,26 +14,7 @@ export default function Home() {
           content="Connecting projects with developers"
         />
       </Head>
-      <h1>home page</h1>
-      <h1>home page</h1>
-      <h1>home page</h1>
-      <h1>home page</h1>
-      <h1>home page</h1>
-      <h1>home page</h1>
-      <h1>home page</h1>
-      <h1>home page</h1>
-      <h1>home page</h1>
-      <h1>home page</h1>
-      <h1>home page</h1>
-      <h1>home page</h1>
-      <h1>home page</h1>
-      <h1>home page</h1>
-      <h1>home page</h1>
-      <h1>home page</h1>
-      <h1>home page</h1>
-      <h1>home page</h1>
-      <h1>home page</h1>
-      <h1>home page</h1>
+      <HomePaginationSlider />
     </div>
   );
 }

@@ -7,13 +7,13 @@
   width: 60px;
   height: 60px;
   border-radius: $border-radius-full;
-  box-shadow: 4px 4px 10px 1px rgba($color-light-2, .7);
+  box-shadow: 4px 4px 10px 1px rgba($color-dark-2, .4);
   cursor: pointer;
   transition: all .2s;
 
   &:hover {
     transform: scale(.95);
-    box-shadow: 2px 2px 5px 1px rgba($color-light-2, .8);
+    box-shadow: 2px 2px 5px 1px rgba($color-dark-2, .4);
   }
 
   &:hover .hamburgerIcon::before {
@@ -105,5 +105,41 @@
 }
 
 .closeWrapper {
-  background-color: #f87979;
+  background-color: $color-red-1;
 }
+
+.extendedHamburger {
+  //opacity: 0;
+  z-index: 100;
+  position: fixed;
+  right: 55px;
+  top: 40px;
+  text-align: center;
+  background-color: $color-red-1;
+  width: 180px;
+  height: 40px;
+  border-radius: 25px 0 0 25px;
+  //transition: opacity .5s;
+
+  a {
+    color: $color-text-light;
+    line-height: 40px;
+    margin-left: -25px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:last-child {
+      margin-left: 10px;
+    }
+  }
+}
+//
+//.hamburgerWrapper:hover + .extendedHamburger {
+//  opacity: 1;
+//}
+//
+//.extendedHamburger:hover {
+//  opacity: 1;
+//}

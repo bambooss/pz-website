@@ -16,6 +16,10 @@ const FloatingHamburgerMenu = ({ isOpened, toggleModal }) => (
     >
       <span className={!isOpened ? classes.hamburgerIcon : classes.closeIcon} />
     </div>
+    <div className={classes.extendedHamburger}>
+      <a href="/">Login</a>
+      <a href="/">Register</a>
+    </div>
   </>
 );
 

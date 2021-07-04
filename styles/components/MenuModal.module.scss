@@ -25,9 +25,8 @@
 
     h1 {
       display: inline-block;
-      text-transform: uppercase;
-      font-size: $font-size-xxxl;
-      font-weight: $font-weight-light;
+      font-size: $font-size-hero;
+      font-weight: $font-weight-lighter;
       margin-left: $margin-s;
       margin-bottom: 20vh;
       cursor: pointer;
@@ -44,6 +43,8 @@
   .list {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     list-style-type: none;
   }
 

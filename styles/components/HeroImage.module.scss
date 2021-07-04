@@ -19,3 +19,41 @@
 .hero-image {
 
 }
+
+.hero-content-container {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  text-align: center;
+
+  & .logo {
+
+  }
+
+  & h1 {
+    color: $color-text-light;
+    font-weight: $font-weight-lighter;
+    font-size: $font-size-hero;
+    margin: $margin-s;
+  }
+
+  & h2 {
+    color: $color-text-light;
+    font-weight: normal;
+    font-size: $font-size-xxxl;
+    margin-top: $margin-0;
+  }
+
+  & p {
+    width: 70%;
+    margin: 0 auto;
+    color: $color-text-light;
+    font-weight: lighter;
+    font-size: $font-size-l;
+    text-align: justify;
+  }
+}

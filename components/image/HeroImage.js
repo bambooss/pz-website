@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { FaAngleDown } from 'react-icons/fa';
 import LogoIcon from '../navigation/LogoIcon';
 import classes from '../../styles/components/HeroImage.module.scss';
 
@@ -13,6 +14,7 @@ const HeroImage = ({ children }) => (
         objectFit="cover"
         priority="true"
       />
+      <FaAngleDown className={classes.icon} />
     </div>
     <div className={classes['hero-content-container']}>
       <LogoIcon className={classes.logo} width={70} height={70} />

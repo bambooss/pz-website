@@ -26,6 +26,10 @@ const HeroImage = ({ children }) => (
         application, so you can easily find projects that suit your stack and
         skill level.
       </p>
+
+      <button type="button">
+        <a href="/">Register</a>
+      </button>
     </div>
     <div className={classes['hero-filler']} />
   </>

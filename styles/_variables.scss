@@ -42,7 +42,9 @@ $color-icon-navigation-hover: $color-red-1;
 /*
   SHADOWS
 */
-$shadow-long: 0 2px 40px -7px $color-light-2;
+$shadow-long-light-1: 0 2px 40px -7px $color-light-2;
+$shadow-short-dark-1: 2px 2px 5px 1px rgba($color-dark-2, .4);
+$shadow-long-dark-1: 4px 4px 10px 1px rgba($color-dark-2, .4);
 
 /*
   BORDER

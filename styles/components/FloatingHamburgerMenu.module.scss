@@ -7,13 +7,13 @@
   width: 60px;
   height: 60px;
   border-radius: $border-radius-full;
-  box-shadow: 4px 4px 10px 1px rgba($color-dark-2, .4);
+  box-shadow: $shadow-long-dark-1;
   cursor: pointer;
   transition: all .2s;
 
   &:hover {
     transform: scale(.95);
-    box-shadow: 2px 2px 5px 1px rgba($color-dark-2, .4);
+    box-shadow: $shadow-short-dark-1;
   }
 
   &:hover .hamburgerIcon::before {

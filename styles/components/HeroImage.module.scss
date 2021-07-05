@@ -27,7 +27,7 @@
   flex-direction: column;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -70%);
+  transform: translate(-50%, -50%);
   text-align: center;
 
   & .logo {
@@ -55,5 +55,27 @@
     font-weight: lighter;
     font-size: $font-size-l;
     text-align: justify;
+    line-height: 1.7;
+  }
+
+  & button {
+    min-width: 150px;
+    width: 20%;
+    cursor: pointer;
+    box-shadow: $shadow-long-dark-1;
+    margin: $margin-l auto;
+    background-color: $color-red-1;
+    border: none;
+    color: $color-text-light;
+    padding: $padding-s $padding-l;
+    border-radius: $border-radius-xl;
+    font-size: $font-size-l;
+    & a {
+
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

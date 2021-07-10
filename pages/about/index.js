@@ -3,6 +3,7 @@ import PageBodyBoxed from '../../components/containers/PageBodyBoxed';
 import SectionTitle from '../../components/section/SectionTitle';
 import SectionSubtitle from '../../components/section/SectionSubtitle';
 import SectionTextBox from '../../components/section/SectionTextBox';
+import SectionProfile from '../../components/section/SectionProfile';
 
 export default function Index() {
   return (
@@ -50,6 +51,26 @@ export default function Index() {
           voluptate!
         </SectionTextBox>
       </PageBodyBoxed>
+      <SectionTitle>The Team</SectionTitle>
+      <SectionProfile
+        profileImageURL="/gabor-csecsetka-profile-bw.jpg"
+        profileImageAlt="Profile Gabor Csecsetka"
+        name="Gabor Csecsetka"
+        position="Backend Developer"
+        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
+          atque consectetur facere impedit ipsa, laborum natus necessitatibus
+          optio provident quas quos ratione sit velit. Deserunt hic laborum
+          minus provident rem."
+        facebookProfileURL="https://facebook.com"
+        twitterProfileURL="https://twitter.com"
+        linkedinProfileURL="https://linkedin.com"
+        instagramProfileURL="https://instagram.com"
+        githubProfileURL="https://github.com"
+        discordProfileURL="https://discord.com"
+        emailAddress="csecsi85@gmail.com"
+        city="Budapest"
+        country="Hungary"
+      />
     </div>
   );
 }

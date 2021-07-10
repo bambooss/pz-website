@@ -1,7 +1,9 @@
+import FeaturedImage from '../../components/image/FeaturedImage';
+
 export default function Docs() {
   return (
     <div>
-      <h1>documentation page</h1>
+      <FeaturedImage />
     </div>
-  )
+  );
 }

@@ -1,10 +1,10 @@
 import classes from '../../styles/components/FeaturedImage.module.scss';
 
-const FeaturedImage = () => (
+const FeaturedImage = ({ imageURL, imageAltText, overlayTitle }) => (
   <>
     <div className={classes['image-container']}>
-      <img src="/about-us-featured.jpg" alt="copro featured image" />
-      <h1>About Us</h1>
+      <img src={imageURL} alt={imageAltText} />
+      <h1>{overlayTitle}</h1>
     </div>
   </>
 );

@@ -15,7 +15,7 @@ import developerProfiles from '../../data/developerProfiles';
 const SectionProfile = () => {
   const devProfiles = () =>
     developerProfiles.map(profile => (
-      <div className={classes['profile-image-container']}>
+      <div key={profile.name} className={classes['profile-image-container']}>
         <img src={profile.profileImageURL} alt={profile.profileImageAlt} />
         <div className={classes['profile-content-container']}>
           <h3>{profile.name}</h3>

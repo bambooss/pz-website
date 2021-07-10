@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <Head>
-        <title>Project Zone</title>
+        <title>CoPro</title>
         <meta
           name="description"
           content="Connecting projects with developers"

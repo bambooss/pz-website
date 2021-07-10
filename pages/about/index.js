@@ -8,7 +8,11 @@ import SectionProfile from '../../components/section/SectionProfile';
 export default function Index() {
   return (
     <div>
-      <FeaturedImage />
+      <FeaturedImage
+        imageURL="about-us-featured.jpg"
+        imageAltText="CoPro about us featured image"
+        overlayTitle="About Us"
+      />
       <PageBodyBoxed>
         <SectionTitle>The Project</SectionTitle>
         <SectionTextBox>

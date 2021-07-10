@@ -3,7 +3,7 @@ import { FaAngleDown } from 'react-icons/fa';
 import LogoIcon from '../navigation/LogoIcon';
 import classes from '../../styles/components/HeroImage.module.scss';
 
-const HeroImage = ({ children }) => (
+const HeroImage = () => (
   <>
     <div className={classes['hero-container']}>
       <Image

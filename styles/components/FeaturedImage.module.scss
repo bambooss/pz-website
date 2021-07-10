@@ -1,0 +1,30 @@
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 40vh;
+  height: 400px;
+  width: 100%;
+
+  h1 {
+    position: relative;
+    font-size: $font-size-hero;
+    font-weight: $font-weight-lighter;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    vertical-align: center;
+    background-color: rgba(0, 0, 0, .5);
+    padding-top: 100px;
+    color: $color-text-light;
+    box-shadow: $shadow-short-dark-2;
+  }
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: bottom;
+  }
+}

@@ -1,34 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# CoPro website
 
-First, run the development server:
+Website for CoPro application to feature the application funtionality, what problem it tries to solve and tell us about the developers who created the project.
+
+## Tech Stack
+
+- React.js
+- Next.js
+- SCSS
+
+## Linters and code formatters
+
+- ESLint
+- Prettier
+## Authors
+
+- [@csecsi85](https://github.com/Csecsi85)
+- [@andrmaz](https://github.com/andrmaz)
+## Installation
+
+- Clone the repository
 
 ```bash
-npm run dev
-# or
-yarn dev
+git clone https://github.com/swapout/pz-website.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Navigate to the cloned project directory
+```bash
+cd <project-directory>
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- Install project dependencies with npm
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```bash
+npm install
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Run the project
 
-## Learn More
+- Navigate to project root
+- Start client in terminal
+```bash
+npm run dev
+```
+- Navigate to http://localhost:3001/ in borwser
+## Related
 
-To learn more about Next.js, take a look at the following resources:
+This project is the website of:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[CoPro Project](https://github.com/swapout):
+- [Front-end](https://github.com/swapout/client)
+- [Back-end](https://github.com/swapout/server-postgres)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+  
+## Contributing
 
-## Deploy on Vercel
+Contributions are always welcome!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+See `contributing.md` for ways to get started.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Please adhere to this project's `code of conduct`.
+
+  
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+  

@@ -53,17 +53,3 @@ This project is the website of:
 - [Back-end](https://github.com/swapout/server-postgres)
 
   
-## Contributing
-
-Contributions are always welcome!
-
-See `contributing.md` for ways to get started.
-
-Please adhere to this project's `code of conduct`.
-
-  
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
-
-  

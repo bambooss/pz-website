@@ -19,15 +19,21 @@ $color-light-2: #dddddd;
 $color-light-3: #aaaaaa;
 $color-light-4: #888888;
 
+$color-red-1: #f87979;
+
 $color-text-dark: #1e1e1e;
 $color-text: #2d3032;
 $color-text-light: #ffffff;
 
+
 $color-text-navigation-title: $color-light-4;
 
 $color-text-navigation-link: $color-light-4;
-$color-text-navigation-link-hover: $color-dark-4;
-$color-text-navigation-link-active: $color-dark-4;
+$color-text-navigation-link-hover: $color-red-1;
+$color-text-navigation-link-active: $color-red-1;
+
+$color-icon-navigation: $color-light-4;
+$color-icon-navigation-hover: $color-red-1;
 
 /*
   GRADIENTS
@@ -36,7 +42,12 @@ $color-text-navigation-link-active: $color-dark-4;
 /*
   SHADOWS
 */
-$shadow-long: 0 2px 40px -7px $color-light-2;
+$shadow-long-light-1: 0 2px 40px -7px $color-light-2;
+$shadow-short-dark-1: 2px 2px 5px 1px rgba($color-dark-2, .4);
+$shadow-short-dark-2: 2px 2px 5px 1px rgba($color-dark-2, .7);
+$shadow-long-dark-1: 4px 4px 10px 1px rgba($color-dark-2, .4);
+
+$shadow-text-short-dark-1: 2px 2px 5px rgba($color-dark-2, .4);
 
 /*
   BORDER
@@ -46,6 +57,7 @@ $border-radius-s: 6px;
 $border-radius-m: 10px;
 $border-radius-l: 15px;
 $border-radius-xl: 20px;
+$border-radius-full: 100%;
 
 $border-thin: 1px;
 $border-regular: 2px;
@@ -64,10 +76,14 @@ $font-size-s: 0.9em;
 $font-size-m: 1em;
 $font-size-l: 1.2em;
 $font-size-xl: 1.5em;
+$font-size-xxl: 2.5rem;
+$font-size-xxxl: 3rem;
+$font-size-hero: 8rem;
 
 /*
   FONT WEIGHTS
 */
+$font-weight-lighter: lighter;
 $font-weight-light: 300;
 $font-weight-book: 400;
 $font-weight-medium: 500;

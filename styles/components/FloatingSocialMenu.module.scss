@@ -1,0 +1,25 @@
+.socialMenuWrapper {
+  z-index: 3;
+  position: fixed;
+  right: 45px;
+  bottom: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  svg {
+    color: $color-icon-navigation;
+    margin-bottom: $margin-s;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover {
+      color: $color-icon-navigation-hover;
+      margin-bottom: $margin-xs;
+      width: 29px;
+      height: 29px;
+    }
+  }
+}

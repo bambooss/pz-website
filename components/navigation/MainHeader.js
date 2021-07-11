@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import Link from 'next/link';
-import classes from '../../styles/components/MainHeader.module.scss';
 import { useRouter } from 'next/router';
-import LogoIcon from '../navigation/LogoIcon';
-
 import { FaUserCircle } from 'react-icons/fa';
+import classes from '../../styles/components/MainHeader.module.scss';
+
+import LogoIcon from './LogoIcon';
 
 function MainHeader() {
   const [isOpened, setIsOpened] = useState(false);
@@ -39,30 +39,28 @@ function MainHeader() {
     <header className={classes.main}>
       <div className={classes.logoWrapper}>
         <LogoIcon
-          linkPath={'/'}
-          logoPath={'/bamboos-logo-cropped.jpeg'}
-          altText={'Bamboos logo'}
+          linkPath="/"
+          logoPath="/copro-logo-cropped-square.png"
+          altText="CoPro logo"
           width={35}
           height={35}
         />
-        <Link href={'/'}>
+        <Link href="/">
           <h1>Project Zone</h1>
         </Link>
       </div>
       <nav>
         <ul className={classes.list}>
-          {menuItems.map(item => {
-            return (
-              <li
-                key={item.name}
-                className={`${
-                  router.pathname === item.url ? classes.active : ''
-                } ${classes.listItem}`}
-              >
-                <Link href={item.url}>{item.name}</Link>
-              </li>
-            );
-          })}
+          {menuItems.map(item => (
+            <li
+              key={item.name}
+              className={`${
+                router.pathname === item.url ? classes.active : ''
+              } ${classes.listItem}`}
+            >
+              <Link href={item.url}>{item.name}</Link>
+            </li>
+          ))}
           <li className={classes.listItem} onClick={toggleModal}>
             <a>
               <FaUserCircle />

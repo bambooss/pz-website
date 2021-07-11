@@ -1,0 +1,30 @@
+.section-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem auto 2rem;
+  font-size: $font-size-xxxl;
+  color: $color-dark-4;
+  font-weight: $font-weight-light;
+  text-align: center;
+  text-shadow: $shadow-text-short-dark-1;
+
+  &:before, &:after {
+    display: inline-block;
+    content: " ";
+    width: 4rem;
+    height: 2px;
+    background-color: $color-light-4;
+    margin: 0 20px;
+    box-shadow: $shadow-text-short-dark-1;
+  }
+}
+
+//.divider {
+//  display: inline-block;
+//  content: " ";
+//  width: 4rem;
+//  height: 2px;
+//  background-color: black;
+//  margin: 0 20px;
+//}

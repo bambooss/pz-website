@@ -1,0 +1,145 @@
+.hamburgerWrapper {
+  z-index: 9999;
+  text-align: center;
+  position: fixed;
+  right: 30px;
+  top: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: $border-radius-full;
+  box-shadow: $shadow-long-dark-1;
+  cursor: pointer;
+  transition: all .2s;
+
+  &:hover {
+    transform: scale(.95);
+    box-shadow: $shadow-short-dark-1;
+  }
+
+  &:hover .hamburgerIcon::before {
+    top: -8px;
+    transform: scaleX(.95);
+  }
+
+  &:hover .hamburgerIcon::after {
+    top: 8px;
+    transform: scaleX(.95);
+  }
+
+  &:hover .closeIcon::before {
+    top: 0;
+    transform: rotate(45deg) scaleX(.95);
+
+  }
+
+  &:hover .closeIcon::after {
+    top: 0;
+    transform: rotate(-45deg) scaleX(.95);
+  }
+}
+
+.hamburgerIcon {
+  position: relative;
+  margin-top: $margin-l;
+
+  &,
+  &::before,
+  &::after {
+    background-color: $color-light-1;
+    width: 30px;
+    height: 2px;
+    display: inline-block;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .2s;
+  }
+
+  &::before {
+    top: -9px;
+  }
+
+  &::after {
+    top: 9px;
+  }
+}
+
+.closeIcon {
+  position: relative;
+  margin-top: $margin-l;
+
+  & {
+    display: inline-block;
+    width: 30px;
+  }
+
+  &::before,
+  &::after {
+    background-color: $color-light-1;
+    width: 30px;
+    height: 2px;
+    display: inline-block;
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .2s;
+  }
+
+  &::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+}
+
+.openWrapper {
+  background-color: $color-light-2;
+}
+
+.closeWrapper {
+  background-color: $color-red-1;
+}
+
+.extendedHamburger {
+  //opacity: 0;
+  z-index: 100;
+  position: fixed;
+  right: 55px;
+  top: 40px;
+  text-align: center;
+  background-color: $color-red-1;
+  width: 180px;
+  height: 40px;
+  border-radius: 25px 0 0 25px;
+  //transition: opacity .5s;
+
+  a {
+    color: $color-text-light;
+    line-height: 40px;
+    margin-left: -25px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:last-child {
+      margin-left: 10px;
+    }
+  }
+}
+//
+//.hamburgerWrapper:hover + .extendedHamburger {
+//  opacity: 1;
+//}
+//
+//.extendedHamburger:hover {
+//  opacity: 1;
+//}
